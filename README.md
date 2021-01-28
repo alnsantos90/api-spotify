@@ -55,6 +55,8 @@ $ npm start
 
 ```
 
+<img alt="React RocketShoes" src="https://res.cloudinary.com/dewuj3mpr/image/upload/v1611811306/api-spotify_eryllc.png" />
+
 ## REFATORAÇÕES E PENDÊNCIAS
 
 - Redirecionar usuário quando quando expirar o token
