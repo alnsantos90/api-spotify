@@ -9,18 +9,18 @@ import { usePlaylist } from '../../Context/PlaylistContext';
 import { useLoading } from '../../Context/Caregando';
 
 import Loading from '../../Components/Loading';
-import AssossiarClima from '../Modal/AssossiarPlaylist';
+import AssociarClima from '../Modal/AssociarPlaylist';
 import MusicasPlaylist from '../Modal/MusicasPlaylist';
 import playlistImg from '../../img/playlist-img.jpg';
 
 function PlayslistsItem() {
   // HOOKS
   const { setVerMusicasModal } = useModal();
-  const { setAssossiarModal } = useModal();
+  const { setAssociarModal } = useModal();
   const { playlists, setPlaylists } = usePlaylist();
   const { carregando, setCarregando } = useLoading();
   const [getMusicaId, setGetMusicaId] = useState();
-  const [assosiarId, setAssossiarId] = useState();
+  const [associarId, setAssociarId] = useState();
 
   // EFFECTS
   useEffect(() => {
@@ -55,10 +55,10 @@ function PlayslistsItem() {
     setGetMusicaId(getMusicas);
     setVerMusicasModal(true);
   }
-  function handleAssossiarPlaylist({ target }) {
+  function handleAssociarPlaylist({ target }) {
     let getPlay = target.dataset.playid;
-    setAssossiarId(getPlay);
-    setAssossiarModal(true);
+    setAssociarId(getPlay);
+    setAssociarModal(true);
   }
 
   return (
@@ -83,10 +83,10 @@ function PlayslistsItem() {
 
                     <Dropdown.Menu>
                       <Dropdown.Item
-                        onClick={handleAssossiarPlaylist}
+                        onClick={handleAssociarPlaylist}
                         data-playid={playlist.id}
                       >
-                        Assossiar á um clima
+                        Associar á um clima
                       </Dropdown.Item>
                       <Dropdown.Item
                         onClick={handleVerMusicasPlaylist}
@@ -98,7 +98,7 @@ function PlayslistsItem() {
                   </Dropdown>
                 </div>
               </Card.Body>
-              <AssossiarClima playlistId={assosiarId} />
+              <AssociarClima playlistId={associarId} />
             </Card>
             <MusicasPlaylist musicasId={getMusicaId} />
           </div>

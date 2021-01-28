@@ -9,8 +9,8 @@ export function useModal() {
   const {
     criarModal,
     setCriarModal,
-    assossiarModal,
-    setAssossiarModal,
+    associarModal,
+    setAssociarModal,
     deletarModal,
     setDeletarModal,
     addPlaylist,
@@ -21,8 +21,8 @@ export function useModal() {
   return {
     criarModal,
     setCriarModal,
-    assossiarModal,
-    setAssossiarModal,
+    associarModal,
+    setAssociarModal,
     deletarModal,
     setDeletarModal,
     addPlaylist,
@@ -35,7 +35,7 @@ export function useModal() {
 // CRIAÇÃO FUNÇÃO QUE REPASSA ESTADO PARA TODOS OS FILHOS
 export default function ModalProvider({ children }) {
   const [criarModal, setCriarModal] = useState();
-  const [assossiarModal, setAssossiarModal] = useState();
+  const [associarModal, setAssociarModal] = useState();
   const [deletarModal, setDeletarModal] = useState();
   const [addPlaylist, setAddPlaylist] = useState();
   const [verMusicasModal, setVerMusicasModal] = useState();
@@ -46,8 +46,8 @@ export default function ModalProvider({ children }) {
       value={{
         criarModal,
         setCriarModal,
-        assossiarModal,
-        setAssossiarModal,
+        associarModal,
+        setAssociarModal,
         deletarModal,
         setDeletarModal,
         addPlaylist,

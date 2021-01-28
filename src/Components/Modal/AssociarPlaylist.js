@@ -4,17 +4,17 @@ import { Modal, Form, Button } from 'react-bootstrap';
 import { useModal } from '../../Context/ModalsContext';
 
 // ASSOSSIAR A CLIMA
-function AssossiarClima({ playlistId }) {
-  const { assossiarModal, setAssossiarModal } = useModal();
+function AssociarClima({ playlistId }) {
+  const { associarModal, setAssociarModal } = useModal();
   return (
     <Modal
       size="md"
-      show={assossiarModal}
-      onHide={() => setAssossiarModal(false)}
-      aria-labelledby="assossiar-playlist"
+      show={associarModal}
+      onHide={() => setAssociarModal(false)}
+      aria-labelledby="associar-playlist"
     >
       <Modal.Header closeButton>
-        <Modal.Title id="assossiar-playlist">
+        <Modal.Title id="associar-playlist">
           Assossiar Playlist: name playlist
         </Modal.Title>
       </Modal.Header>
@@ -38,7 +38,7 @@ function AssossiarClima({ playlistId }) {
             </Form.Control>
           </Form.Group>
           <Button variant="success" type="submit">
-            Assossiar ao clima
+            Associar ao clima
           </Button>
         </Form>
       </Modal.Body>
@@ -46,4 +46,4 @@ function AssossiarClima({ playlistId }) {
   );
 }
 
-export default AssossiarClima;
+export default AssociarClima;
