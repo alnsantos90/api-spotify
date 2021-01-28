@@ -6,10 +6,7 @@
 ## :rocket: Tecnologias
 
   
-
-This project was developed at the [RocketSeat GoStack Bootcamp](https://rocketseat.com.br/bootcamp) with the following technologies:
-
-  
+ 
 
 - [ReactJS](https://reactjs.org/)
 
