@@ -2,6 +2,8 @@
 
  ## APP SPOTIFY MUSICS
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e14ce6604f094a6da80a89aa3ed14fe3)](https://app.codacy.com/gh/alnsantos90/api-spotify?utm_source=github.com&utm_medium=referral&utm_content=alnsantos90/api-spotify&utm_campaign=Badge_Grade)
+
 
 ## :rocket: Tecnologias
 
